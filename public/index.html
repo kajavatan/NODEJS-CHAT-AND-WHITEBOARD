@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Chat Application</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+	<script src="/p5.js"></script>
+	<script src="/p5.dom.js"></script>
+	<script src="/p5.sound.js"></script>
+	
+	
+	<style>
+		body {
+		  background-color: linen;
+		}
+
+		#chat-window {
+		  color: maroon;
+		  width: 100%; 
+		} 
+		#chat-window,#handle,#message,#send {
+		  width: 100%; 
+		} 
+
+		canvas {
+		  width: 100% !important;
+		  height: 400px !important;
+		}
+	</style>
+</head>
+<body>
+	<h1> Chat Application</h1>
+	<div class="row">
+	    <div class="col-md-10" style="background-color:yellow;" id="sketch-holder">
+	      
+	    </div>
+	    <div class="col-md-2" id="mario-chat">
+	      	<div id="chat-window">
+	            <div id="output"></div>
+	            <div id="feedback"></div>
+        	</div>
+        	<!-- <input id="handle" type="text" placeholder="Handle" /> -->
+	        <input id="message" type="text" placeholder="Message" />
+	        <button id="send">Send</button>
+	    </div>
+	</div>
+	 
+    <script src="/chat.js"></script>
+    <!-- <script src="/sketch.js"></script> -->
+</body>
+</html>
